@@ -10,7 +10,7 @@ contract GameItem is ERC1155 {
     uint256 public constant SWORD = 3;
     uint256 public constant SHIELD = 4;
 
-    constructor() public ERC1155("https://localhost:3003/item/{id}.json") {
+    constructor() ERC1155("https://localhost:3003/item/{id}.json") {
         _mint(msg.sender, GOLD, 10**18, "");
         _mint(msg.sender, SILVER, 10**27, "");
         _mint(msg.sender, THORS_HAMMER, 1, "");

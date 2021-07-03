@@ -5,8 +5,8 @@ import "@openzeppelin/contracts/token/ERC721/presets/ERC721PresetMinterPauserAut
 
 contract NFT is ERC721PresetMinterPauserAutoId {
     constructor(
-        name,
-        symbol,
-        baseUrl
+        string memory name,
+        string memory symbol,
+        string memory baseUrl
     ) ERC721PresetMinterPauserAutoId(name, symbol, baseUrl) {}
 }
